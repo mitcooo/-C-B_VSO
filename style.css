@@ -1,0 +1,40 @@
+body, div, ul, li, a, input, button, #wrapper {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	height: 900px;
+	
+	background-image:  url("images/back.jpeg");
+ 
+}
+#wrapper {
+	
+	width: 1200px;
+    margin: 21px;
+    padding: 50px;
+    background: rgba(233,225,225, 0.3);
+	border-radius: 15px;
+
+}
+#bullsandcows{
+	padding: 30px;
+}
+li {
+	text-align: center;
+	width: 25%;
+	color: #F41348;
+	padding: 5px;
+	padding-left: 0px;
+	margin: 5px;
+	margin-left: 0px;
+	border-color: #F41348; 
+	font-family: serif;
+	font-weight: bold;
+	font-size: 15px;
+	list-style-type: none;
+	background-color: #BEB2B2;
+	border-radius: 5px;
+
+}

@@ -80,15 +80,15 @@ CandB.prototype.enterNumber = function(number) {
 			if (status === true) {
 				return;
 			} else if (status === false) {
-				return alert("Number must have unique character and must be 4 digit number.");
+				return alert("Числото трябва да съдържа различни цифри, различни от 0 и да е четирицифрено!");
 			}
-			addRes(ul, "Number " + number + ". Bulls: "+ status.b + ", Cows: "+status.c);
+			addRes(ul, "Число " + number + ". Бикове: "+ status.b + ", Крави: "+status.c);
 
 		};
 
 		//извеждаме резултат при победа и бутон за нова игра
 		game.onWin = function(){
-			addRes(ul, "You won! " + game.number);
+			addRes(ul, "ПОБЕДА! " + game.number);
 			addBtn(ul);
 			button.disabled = true;
 
