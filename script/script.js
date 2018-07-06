@@ -88,7 +88,9 @@ CandB.prototype.enterNumber = function(number) {
 
 		//извеждаме резултат при победа и бутон за нова игра
 		game.onWin = function(){
-			addRes(ul, "ПОБЕДА! " + game.number);
+			addRes(ul, "ПОБЕДА! Числото е:" +" " + game.number);
+			
+			addVideo(ul);
 			addBtn(ul);
 			button.disabled = true;
 
@@ -99,6 +101,15 @@ CandB.prototype.enterNumber = function(number) {
 			li.appendChild(document.createTextNode(text));
 			ul.appendChild(li);
 
+		}
+		function addVideo(ul){
+			var video = document.createElement("video");
+			var li = document.createElement("li");
+			video.src = "images/winn.mov";
+			video.width = '280';
+			video.autoplay = true;
+			li.appendChild(video);
+			ul.appendChild(li);
 		}
 		function addBtn(ul) {
 			var a = document.createElement("a");
@@ -112,4 +123,4 @@ CandB.prototype.enterNumber = function(number) {
 		}
 
 
-CandB	})();
+	})();

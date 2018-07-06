@@ -1,4 +1,4 @@
-body, div, ul, li, a, input, button, #wrapper {
+body, div, ul, li, a, input, button, #wrapper, p, h2, video {
 	margin: 0px;
 	padding: 0px;
 }
@@ -14,7 +14,7 @@ body {
 	width: 1200px;
     margin: 21px;
     padding: 50px;
-    background: rgba(233,225,225, 0.3);
+    background: rgba(233,225,225, 0.2);
 	border-radius: 15px;
 
 }
@@ -24,7 +24,7 @@ body {
 li {
 	text-align: center;
 	width: 25%;
-	color: #F41348;
+	color:#F8F0F0;
 	padding: 5px;
 	padding-left: 0px;
 	margin: 5px;
@@ -34,7 +34,23 @@ li {
 	font-weight: bold;
 	font-size: 15px;
 	list-style-type: none;
-	background-color: #BEB2B2;
-	border-radius: 5px;
-
+	background: rgba(233,225,225, 0.2);
+	border-radius: 3px;
+}
+p, h2 {
+	text-align: center;
+	font-family: serif;
+	font-weight: bold;
+	
+}
+a {
+	text-decoration: none;
+	color: red;
+}
+#numberValue, #clickOnMe {
+	width: 12.5%;
+	font-size: 15px;
+}
+video {
+	padding: 4px;
 }
